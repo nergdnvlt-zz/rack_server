@@ -5,6 +5,7 @@ require 'capybara/minitest'
 require './app/controllers/personal_site.rb'
 
 Capybara.app = PersonalSite
+Capybara.save_path = './tmp/capybara'
 
 class CapybaraTestCase < Minitest::Test
   include Capybara::DSL

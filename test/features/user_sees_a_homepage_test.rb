@@ -9,7 +9,7 @@ class HomePageTest < CapybaraTestCase
   def test_user_can_see_the_hompage
     # visit is a capybara method which takes the path as an arguement
     visit '/'
-
+    save_and_open_page
     # asserts that the page has content
     assert page.has_content?('Welcome!')
     # test the status code response for a specific code
